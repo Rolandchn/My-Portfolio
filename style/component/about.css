@@ -1,0 +1,172 @@
+
+
+.about{
+    display: flex;
+    gap: 2rem;
+}
+
+.about__title{
+    color: var(--clr-light);
+    font-size: var(--size-5xl);
+    font-weight: 800;
+
+    text-transform: capitalize;
+    line-height: 1;
+}
+
+.about__description{
+    color: var(--clr-slate600);
+    font-size: var(--size-xl);
+    font-weight: 400;
+
+    max-width: 60ch;
+
+    text-decoration: none;
+
+    margin-top: 2rem;
+}
+
+.about__description--link{
+    text-decoration: none;
+}
+
+.about__separator{
+    border-color: var(--clr-slate800);
+
+    margin-top: 2rem;
+}
+
+.about__subtitle{
+    color: var(--clr-slate400);
+    font-size: var(--size-xl);
+    font-weight: 800;
+
+    margin-top: 2rem;
+}
+
+.about__technologies--container{
+    display: flex;
+}
+
+.about__technologies{
+    color: var(--clr-slate600);
+    font-size: var(--size-xl);
+    font-weight: 400;
+
+    flex: 1;
+    
+    list-style-type: '\1F44D';
+
+    margin-top: 2rem;
+    padding-left: 1em;
+}
+
+.about__technologies > li:not(:first-child) {
+    margin-top: 1rem;
+}
+
+.about__technologies > li::before{
+    content: '';
+    margin-left: 0.5em;
+}
+
+.about__img--container{
+    align-self: center;
+    margin-inline: auto;
+}
+
+
+/* @media (max-width: 1536px){
+
+} */
+
+@media (max-width: 1280px){
+    .about{
+        gap: 1.5rem;
+    }
+
+    .about__title{
+        font-size: var(--size-4xl);
+    }
+
+    .about__description{
+        font-size: var(--size-lg);
+
+        margin-top: 1.5rem;
+    }
+
+    .about__subtitle{
+        font-size: var(--size-lg);
+
+        margin-top: 1.5rem;
+    }
+
+    .about__technologies{
+        font-size: var(--size-lg);
+
+        margin-top: 1.5rem;
+    }   
+
+    .about__img{
+        width: 28.125rem;
+        height: auto;
+    }
+}
+
+@media (max-width: 1024px){
+    .about{
+        flex-direction: column;
+    }
+
+    .about__title{
+        font-size: var(--size-3xl);
+    }
+
+    .about__description{
+        font-size: var(--size-base);
+    }
+
+    .about__subtitle{
+        font-size: var(--size-base);
+    }
+
+    .about__technologies{
+        font-size: var(--size-base);
+    }   
+}
+
+/* @media (max-width: 768px){
+
+} */
+
+/* @media (max-width: 640px){
+
+} */
+
+@media (max-width: 475px){
+    .about{
+        gap: 1rem;
+    }
+
+    .about__title{
+        font-size: var(--size-2xl);
+    }
+
+    .about__description{
+        font-size: var(--size-sm);
+        
+        margin-top: 1rem;
+    }
+
+    .about__subtitle{
+        font-size: var(--size-sm);
+
+        margin-top: 1rem;
+    }
+
+    .about__technologies{
+        font-size: var(--size-sm);
+
+        margin-top: 1rem;
+    }   
+}
