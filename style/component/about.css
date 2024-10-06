@@ -72,7 +72,14 @@
 
 .about__img--container{
     align-self: center;
+
     margin-inline: auto;
+}
+
+.about__img{
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
 }
 
 
